@@ -6,15 +6,15 @@
 
     <!-- Site Info -->
     {% if title %}
-      <title>MY Blog - {{ title }}</title>
+      <title>RBlog - {{ title }}</title>
     {% else %}
-      <title>MY Blog</title>
+      <title>RBlog</title>
     {% endif %}
     <meta name="description" content="FastAPI">
     <meta name="author" content="Raieyan Aziz">
 
     <!-- Open Graph Tags: The title of the page for social media sharing. It can match the title tag or be more descriptive. -->
-    <meta property="og:title" content="MY Blog">
+    <meta property="og:title" content="RBlog">
 
     <!-- Open Graph Tags: Typically set to "website" for static sites or "article" for content-heavy pages. -->
     <meta property="og:type" content="website">
@@ -50,7 +50,8 @@
 
     <!-- Favicon for all browsers -->
     <link rel="icon" href="{{ url_for('static', path = 'icons/favicon.ico') }}" sizes="any">
-    <link rel="icon" href="{{ url_for('static', path = 'icons/icon.svg') }}" type="image/svg+xml">
+    <!-- <link rel="icon" href="{{ url_for('static', path = 'icons/icon.svg') }}" type="image/svg+xml"> -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', path='icons/icon.png') }}">
 
     <!-- Apple touch icon for iOS devices -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', path = 'icons/icon.png') }}">
@@ -65,7 +66,7 @@
       <nav class="navbar navbar-expand-md bg-steel fixed-top"
            data-bs-theme="dark">
         <div class="container">
-          <a class="navbar-brand me-4" href="{{ url_for("home") }}">MY Blog</a>
+          <a class="navbar-brand me-4" href="{{ url_for("home") }}"><Ri:a></Ri:a>RBlog</a>
           <button class="navbar-toggler"
                   type="button"
                   data-bs-toggle="collapse"
