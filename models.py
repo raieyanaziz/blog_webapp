@@ -15,7 +15,7 @@ class User(Base):
     email: Mapped[str] = mapped_column(String, unique=True, nullable=False)
     image_file: Mapped[str | None] = mapped_column(String(200), nullable=True, default=None)
     
-    posts: Mapped[list[Post]] = relationship(back_populates="author")
+    posts: Mapped[list[Post]] = relationship(back_populates="author", cascade="all, delete-orphan")
     
     @property
     def image_path(self) -> str:
