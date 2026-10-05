@@ -17,3 +17,6 @@ __pycache__/
 
 # Local databases
 blog.db
+
+
+finished/
